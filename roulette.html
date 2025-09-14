@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Website Button</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="goRandom()">Take Me Somewhere!</button>
+
+  <script>
+    function goRandom() {
+      const websites = [
+        "https://gnu.org",
+        "https://youtube.com",
+        "https://templeos.org",
+        "https://owen-shenanigans.com",
+        "https://stackoverflow.com",
+        "https://github.com",
+        "https://music.youtube.com",
+        "https://sandboxels.r74n.com/",
+        "https://distrowatch.com/",
+        "https://archive.org",
+        "https://discord.com",
+        "https://google.com",
+        "https://debian.org",
+        "https://archlinux.org",
+        "https://gentoo.org",
+        "https://rule34.xxx/index.php?page=post&s=list&tags=lucario+masturbation&pid=672",
+        "https://ubuntu.com",
+        "https://duckduckgo.com",
+        "https://sites.google.com/gamekido.com/tyronesgames/cookie-clicker",
+        "https://about.gitlab.com",
+        "https://sourceforge.net",
+        "https://www.google.com/search?q=how+to+goon+to++lebron+james&sca_esv=5cf424209cb79bcd&sxsrf=AE3TifNw2lCXBKgwRc5ojYbQ358XclWbtg%3A1757830420045&ei=FF3GaNzCArbCp84PwuKI4QI&ved=0ahUKEwjcnIzOzNePAxU24ckDHUIxIiwQ4dUDCBI&uact=5&oq=how+to+goon+to++lebron+james&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGhvdyB0byBnb29uIHRvICBsZWJyb24gamFtZXNIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEDyAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcA&sclient=gws-wiz-serp",
+        "https://mail.google.com",
+        "https://rust-lang.org",
+        "https://perl.org"
+      ];
+
+      // Pick a random index
+      const randomIndex = Math.floor(Math.random() * websites.length);
+
+      // Redirect to that site
+      window.location.href = websites[randomIndex];
+    }
+  </script>
+</body>
+</html>
